@@ -24,17 +24,24 @@ body{
 }
 
 .contacts {
-    margin-top: 60px;
+    margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
     color: #ffffff;
 }
 .contacts-title {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 28px;
     color: #fff;
 
+}
+.contacts-url{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #fff;
+    margin-right: 10px;
 }
 .about {
 padding-left: 90px;
@@ -46,7 +53,7 @@ padding-left: 90px;
     width: 370px;
 }
 .profession {
-    font-size: 20px !important;
+    font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     margin-bottom: 23px;
@@ -81,10 +88,36 @@ padding-left: 90px;
     font-weight: 700;
     margin-left: 17px;
 }
+.skills {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 55px;
+}
+.skills-title {
+    
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+.item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 15px;
+    color: white;
+}
 .footer {
-    background: #ffffff;
+    background: white;
+    height: 100px;
     display: flex;
     max-width: 1200px;
     margin: auto;
-    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.20);
+    background-color: #7E1A34;
+}
+.footer-img {
+    margin-left: 230px;
 }
