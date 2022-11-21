@@ -113,11 +113,22 @@ padding-left: 90px;
     background: white;
     height: 100px;
     display: flex;
+    justify-content: center;
     max-width: 1200px;
     margin: auto;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.20);
     background-color: #7E1A34;
 }
-.footer-img {
-    margin-left: 230px;
+
+.footer-text-block {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
+.footer-text {
+    justify-content: center;
+    align-items: center;
+}
+
