@@ -83,7 +83,7 @@ padding-left: 90px;
     line-height: 24px;
 }
 .projects {
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: lightgreen;
     text-align: center;
     margin-bottom: 55px;
@@ -91,6 +91,7 @@ padding-left: 90px;
 .code-example img {
     max-height: 100%;
     max-width: 100%;
+    border-radius: 15px;
 }
 .url-progect {
     color: #595959;
