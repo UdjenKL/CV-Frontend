@@ -152,6 +152,7 @@ padding-left: 90px;
 .footer-item:nth-child(2) {
     background-color: green;
     flex-direction: column;
+
 } 
 .footer-item:nth-child(3) {
     background-color: yellow;
