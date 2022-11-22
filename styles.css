@@ -6,7 +6,8 @@
     
 }
 body{
-    background: white;
+    
+background: linear-gradient(to top left, powderblue, pink);
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 20px;
@@ -125,25 +126,34 @@ padding-left: 90px;
     color: white;
 }
 .footer {
-    background: white;
-    height: 100px;
-    display: flex;
     justify-content: center;
+    align-items: center;
     max-width: 1200px;
     margin: auto;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.20);
     background-color: #7E1A34;
+    display: flex;
+    flex-direction: row;
+    
 }
-
-.footer-text-block {
+.footer-item {
+    border-radius: 10px;
+    background-color: rgba(235, 76, 76, 0.687);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
     width: 200px;
     height: 100px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+
 }
-.footer-text {
-    justify-content: center;
-    align-items: center;
+.footer-item:nth-child(2) {
+    background-color: green;
+    flex-direction: column;
+} 
+.footer-item:nth-child(3) {
+    background-color: yellow;
 }
 
