@@ -15,6 +15,7 @@ background: linear-gradient(to top left, powderblue, pink);
 }
 .site {
     max-width: 1200px;
+    margin: 0 auto;
 }
 .wrapper {
         background: #ffffff;
