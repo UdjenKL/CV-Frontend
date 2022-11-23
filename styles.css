@@ -3,10 +3,10 @@
 *{
     padding: 0;
     margin: 0;
-    
+
 }
 body{
-    
+
 background: linear-gradient(to top left, powderblue, pink);
     padding-top: 40px;
     padding-bottom: 40px;
@@ -76,6 +76,7 @@ padding-left: 90px;
     font-weight: 400;
     line-height: 24px;
     margin-top: 24px;
+    text-align: justify;
 }
 .progects-title {
     margin-top: 20px;
@@ -110,7 +111,7 @@ padding-left: 90px;
     margin-top: 55px;
 }
 .skills-title {
-    
+
     font-size: 22px;
     font-weight: 700;
     line-height: 24px;
@@ -134,7 +135,7 @@ padding-left: 90px;
     background-color: #7E1A34;
     display: flex;
     flex-direction: row;
-    
+
 }
 .footer-item {
     border-radius: 10px;
@@ -153,7 +154,7 @@ padding-left: 90px;
     background-color: green;
     flex-direction: column;
 
-} 
+}
 .footer-item:nth-child(3) {
     background-color: yellow;
 }
