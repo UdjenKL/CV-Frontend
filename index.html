@@ -7,155 +7,202 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
     <title>cv</title>
     <style>
+
         @media (max-width: 780px) {
-            .description {
-                display: none;
-            }
-            .about {
-                display: none;
-            }
             .aside {
-                display: flex;
-                width: 740px;
-            }
-            .avatar {
-             height: 400px;
                 max-width: 100%;
+            }
+
+            .avatar {
+                height: 400px;
                 display: flex;
                 flex-direction: row;
+            }
+            .footer {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 775px) {
+            .footer {
+                max-width: 100%;
+            }
+            .aside {
+                max-width: 100%;
+            }
+            .avatar {
+                height: 200px;
+                width: 200px;
+                display: flex;
+                flex-direction: row;
+            }
+            .about {
+
+            }
+
+            @media (max-width: 745px) {
+                .wrapper {
+                    max-width: 610px;
+                }
+                .about {
+                    display: none;
+                }
+            }
+
+            @media (max-width: 390px) {
+                .aside {
+                    width: 390px;
+                }
+                img.avatar {
+                    padding-left: 75px;
+                }
+                .main {
+                    text-align: center;
+                }
+                .footer {
+                    max-width:100%;
+                }
+                .footer-item {
+                    width: 70px;
+                    height: 70px;
+                }
+                .footer-item img {
+                    width: 80px;
+                }
             }
         }
     </style>
 </head>
 <body>
-<div class="wrapper">
-    <div class="aside">
-        <img class="avatar" src="./img/My_photo.jpg" alt="My photo">
-        <h3>hello</h3>
-        <div class="main">
-            <div class="contacts">
-                <h3 class="contacts-title">Contacts</h3><br>
-                <div>
-                    <span class="contacts-url">Minsk, Belarus</span>
+<div class="site">
+    <div class="wrapper">
+        <div class="aside">
+            <img class="avatar" src="./img/My_photo.jpg" alt="My photo">
+            <div class="main">
+                <div class="contacts">
+                    <h3 class="contacts-title">Contacts</h3><br>
+                    <div>
+                        <span class="contacts-url">Minsk, Belarus</span>
+                    </div>
+                    <div>
+                        <a class="contacts-url" href="mailto:udjenkl@icloud.com">udjenkl@icloud.com</a>
+                        <a class="contacts-url" href="mailto:webrubin1987@gmail.com">webrubin1987@gmail.com</a>
+                    </div>
+                    <div>
+                        <a class="contacts-url" href="https://t.me/username">YauhenKL (Telegram)</a>
+                    </div>
+                    <div>
+                        <a class="contacts-url" href="https://github.com/UdjenKL">GitHub</a>
+                    </div>
                 </div>
-                <div>
-                    <a class="contacts-url" href="mailto:udjenkl@icloud.com">udjenkl@icloud.com</a>
-                    <a class="contacts-url" href="mailto:webrubin1987@gmail.com">webrubin1987@gmail.com</a>
-                </div>
-                <div>
-                    <a class="contacts-url" href="https://t.me/username">YauhenKL (Telegram)</a>
-                </div>
-                <div>
-                    <a class="contacts-url" href="https://github.com/UdjenKL">GitHub</a>
+                <div class="skills">
+                    <h3 class="skills-title">Tech Skills</h3>
+                    <ul>
+                        <li class="item">
+                            <span class="tech-skills-text">HTML5</span>
+                        </li>
+                        <li class="item">
+                            <span class="tech-skills-text">SCSS</span>
+                        </li>
+                        <li class="item">
+                            <span class="tech-skills-text">GIT</span>
+                        </li>
+                        <li class="item">
+                            <span class="tech-skills-text">WebPack</span>
+                        </li>
+                        <li class="item">
+                            <span class="tech-skills-text">JavaScript</span>
+                        </li>
+                        <li class="item">
+                            <span class="tech-skills-text">React.js , Redux</span>
+                        </li>
+                        <li class="item">
+                            <span class="tech-skills-text">Base Node.js</span>
+                        </li>
+                        <li class="item">
+                            <span class="tech-skills-text">Linux , MacOS , Windows</span>
+                        </li>
+                        <li class="item">
+                            <span class="tech-skills-text">WebStorm , VsCode</span>
+                        </li>
+                        <li class="item">
+                            <span class="tech-skills-text">Figma</span>
+                        </li>
+                        <li class="item">
+                            <span class="tech-skills-text">Bootstrap</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="skills">
-                <h3 class="skills-title">Tech Skills</h3>
-                <ul>
-                    <li class="item">
-                        <span class="tech-skills-text">HTML5</span>
+        </div>
+        <div class="about">
+            <div class="info">
+                <h1 class="name"><img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif"
+                                      height="50"/> Yauhen Klimovich</h1>
+                <h2 class="profession">Front-end developer</h2>
+                <p class="description">
+                    I live in Minsk, Belarus. Since school age, he began to get interested in programming. Completed
+                    courses
+                    in web design. Graduated in 2021 from the "Private Institute of Management and Entrepreneurship" in
+                    the
+                    specialty
+                    "economist-manager". He received a bachelor's degree and a specialist's degree.
+                    He was retrained at BSUIR ( "Belarusian State University of Informatics and
+                    Radio Electronics") majoring in "software engineer". The study was so
+                    It was fascinating that I decided to continue working in this direction, and began to study JS on my
+                    own
+                    by
+                    the book (David Flanagan - JavaScript. Detailed Guide (6th edition) - 2021). But I realized that
+                    without
+                    I can't do without additional help, and I signed up for Front-end courses. I got a lot of
+                    information,
+                    but
+                    I understand that not everything is and I want to go further in this direction... Now I am
+                    continuing to
+                    study this profession and
+                    I am improving my knowledge base, including English, and trying to develop in this
+                    direction.
+                </p>
+            </div>
+            <div class="projects">
+                <h3 class="progects-title">Projects</h3><br>
+                <ol>
+                    <li class="projects-item">
+                        <a class="url-progect" href="https://shop-beryl-kappa.vercel.app/">ShopPresents</a>
+                        <span><b>[</b><span class="tech-name">HTML5, CSS , React</span><b>]</b></span>
                     </li>
-                    <li class="item">
-                        <span class="tech-skills-text">SCSS</span>
+                    <li class="projects-item">
+                        <a class="url-progect" href="https://udjenkl.github.io/beautiful-slider/">Slider1</a>
+                        <span><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></span>
                     </li>
-                    <li class="item">
-                        <span class="tech-skills-text">GIT</span>
+                    <li class="projects-item">
+                        <a class="url-progect" href="https://udjenkl.github.io/SliderUpDown/">Slider2</a>
+                        <span><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></span>
                     </li>
-                    <li class="item">
-                        <span class="tech-skills-text">WebPack</span>
-                    </li>
-                    <li class="item">
-                        <span class="tech-skills-text">JavaScript</span>
-                    </li>
-                    <li class="item">
-                        <span class="tech-skills-text">React.js , Redux</span>
-                    </li>
-                    <li class="item">
-                        <span class="tech-skills-text">Base Node.js</span>
-                    </li>
-                    <li class="item">
-                        <span class="tech-skills-text">Linux , MacOS , Windows</span>
-                    </li>
-                    <li class="item">
-                        <span class="tech-skills-text">WebStorm , VsCode</span>
-                    </li>
-                    <li class="item">
-                        <span class="tech-skills-text">Figma</span>
-                    </li>
-                    <li class="item">
-                        <span class="tech-skills-text">Bootstrap</span>
-                    </li>
-                </ul>
+                </ol>
+            </div>
+            <div class="code-example">
+                <img src="./img/code.jpg" alt="code">
             </div>
         </div>
     </div>
-    <div class="about">
-        <div class="info">
-            <h1 class="name"><img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif"
-                                  height="50"/> Yauhen Klimovich</h1>
-            <h2 class="profession">Front-end developer</h2>
-            <p class="description">
-                I live in Minsk, Belarus. Since school age, he began to get interested in programming. Completed
-                courses
-                in web design. Graduated in 2021 from the "Private Institute of Management and Entrepreneurship" in
-                the
-                specialty
-                "economist-manager". He received a bachelor's degree and a specialist's degree.
-                He was retrained at BSUIR ( "Belarusian State University of Informatics and
-                Radio Electronics") majoring in "software engineer". The study was so
-                It was fascinating that I decided to continue working in this direction, and began to study JS on my
-                own
-                by
-                the book (David Flanagan - JavaScript. Detailed Guide (6th edition) - 2021). But I realized that
-                without
-                I can't do without additional help, and I signed up for Front-end courses. I got a lot of
-                information,
-                but
-                I understand that not everything is and I want to go further in this direction... Now I am
-                continuing to
-                study this profession and
-                I am improving my knowledge base, including English, and trying to develop in this
-                direction.
-            </p>
+    <div class="footer">
+        <a href="https://rs.school/">
+            <div class="footer-item"><img src="./img/rs_school_js.svg"></div>
+        </a>
+        <div class="footer-item">
+            <div>
+                <h3>2022</h3>
+            </div>
+            <div>
+                <h4>Все права защищены &copy;</h4>
+            </div>
         </div>
-        <div class="projects">
-            <h3 class="progects-title">Projects</h3><br>
-            <ol>
-                <li class="projects-item">
-                    <a class="url-progect" href="https://shop-beryl-kappa.vercel.app/">ShopPresents</a>
-                    <span><b>[</b><span class="tech-name">HTML5, CSS , React</span><b>]</b></span>
-                </li>
-                <li class="projects-item">
-                    <a class="url-progect" href="https://udjenkl.github.io/beautiful-slider/">Slider1</a>
-                    <span><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></span>
-                </li>
-                <li class="projects-item">
-                    <a class="url-progect" href="https://udjenkl.github.io/SliderUpDown/">Slider2</a>
-                    <span><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></span>
-                </li>
-            </ol>
-        </div>
-        <div class="code-example">
-            <img src="./img/code.jpg" alt="code">
-        </div>
+        <a href="https://github.com/UdjenKL">
+            <div class="footer-item"><img src="./img/1220319_github_git_hub_repository_icon.svg" width="100px"
+                                          height="100px" alt="github"></div>
+        </a>
     </div>
-</div>
-<div class="footer">
-    <a href="https://rs.school/">
-        <div class="footer-item"><img src="./img/rs_school_js.svg"></div>
-    </a>
-    <div class="footer-item">
-        <div>
-            <h3>2022</h3>
-        </div>
-        <div>
-            <h4>Все права защищены &copy;</h4>
-        </div>
-    </div>
-    <a href="https://github.com/UdjenKL">
-        <div class="footer-item"><img src="./img/1220319_github_git_hub_repository_icon.svg" width="100px"
-                                      height="100px" alt="github"></div>
-    </a>
 </div>
 </body>
 </html>
