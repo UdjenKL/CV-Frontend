@@ -94,11 +94,6 @@ padding-left: 90px;
     text-align: center;
     margin-bottom: 55px;
 }
-.code-example img {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 15px;
-}
 .url-progect {
     color: #595959;
     font-size: 14px;
@@ -129,6 +124,11 @@ padding-left: 90px;
     line-height: 24px;
     margin-left: 15px;
     color: white;
+}
+.code-example {
+    border-radius: 20px;
+    background: lightgrey;
+    padding: 20px;
 }
 .footer {
 

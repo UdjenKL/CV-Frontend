@@ -39,12 +39,15 @@
             .aside {
                 width: 768px;
             }
+
             p.description {
                 width: 300px;
             }
+
             .about {
                 padding-left: 72px;
             }
+
             .avatar {
                 height: 200px;
                 width: 200px;
@@ -205,7 +208,7 @@
                 <h3 class="progects-title">Projects</h3><br>
                 <ol>
                     <li class="projects-item">
-                        <a class="url-progect" href="https://shop-beryl-kappa.vercel.app/">ShopPresents</a>
+                        <a class="url-progect" href="https://diplop-itschool.vercel.app/">ShopPresents</a>
                         <span><b>[</b><span class="tech-name">HTML5, CSS , React</span><b>]</b></span>
                     </li>
                     <li class="projects-item">
@@ -219,8 +222,22 @@
                 </ol>
             </div>
             <div class="code-example">
-                <img src="./img/code.jpg" alt="code">
-            </div>
+            <pre>function  changeColor (item) {
+    const color = getRandomColor();
+    item.style.backgroundColor = color;
+    item.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
+}
+&nbsp;
+function removeColor (item) {
+    item.style.backgroundColor = '#28292C';
+    item.style.boxShadow = `0 0 2px #000`
+}
+&nbsp;
+function getRandomColor () {
+   const index =  Math.floor(Math.random() * colors.length);
+   return colors[index]
+}</pre>
+                </div>
         </div>
     </div>
     <div class="footer">
