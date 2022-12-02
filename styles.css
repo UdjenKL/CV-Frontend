@@ -1,29 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@300;600&family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
 
 }
-body{
 
-background-image: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple);
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+body {
+
+    background-image: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple);
+    padding: 40px 40px 40px 40px;
 }
+
 .site {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .wrapper {
-        background: #ffffff;
-        display: flex;
-        max-width: 1200px;
-        margin: auto;
-        box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
-    }
+    background: #ffffff;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
 .aside {
     background: #1e2939;
     width: 370px;
@@ -37,6 +38,7 @@ background-image: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple);
     margin-right: 40px;
     color: #ffffff;
 }
+
 .contacts-title {
     font-size: 28px;
     font-weight: 700;
@@ -44,23 +46,27 @@ background-image: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple);
     color: #fff;
 
 }
-.contacts-url{
+
+.contacts-url {
     font-size: 18px;
     font-weight: 300;
     line-height: 24px;
     color: #fff;
     margin-right: 10px;
 }
+
 .about {
-padding-left: 90px;
+    padding-left: 90px;
     padding-right: 90px;
     padding-top: 50px;
     padding-bottom: 110px;
     font-family: 'Nunito', sans-serif;
 }
-.avatar{
+
+.avatar {
     width: 370px;
 }
+
 .profession {
     text-align: center;
     font-size: 20px;
@@ -68,6 +74,7 @@ padding-left: 90px;
     line-height: 24px;
     margin-bottom: 23px;
 }
+
 .name {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -75,6 +82,7 @@ padding-left: 90px;
     font-weight: 700;
     line-height: 89px;
 }
+
 .description {
     font-size: 18px;
     font-weight: 400;
@@ -82,33 +90,39 @@ padding-left: 90px;
     margin-top: 24px;
     text-align: justify;
 }
+
 .progects-title {
     margin-top: 20px;
     font-size: 22px;
     font-weight: 700;
     line-height: 24px;
 }
+
 .projects {
     border-radius: 15px;
     background-color: lightgreen;
     text-align: center;
     margin-bottom: 55px;
 }
+
 .url-progect {
     color: #595959;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
 }
+
 .projects-item {
     font-weight: 700;
     margin-left: 30px;
 }
+
 .skills {
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 55px;
 }
+
 .skills-title {
 
     font-size: 22px;
@@ -118,6 +132,7 @@ padding-left: 90px;
     margin-bottom: 20px;
 
 }
+
 .item {
     font-size: 14px;
     font-weight: 400;
@@ -125,11 +140,13 @@ padding-left: 90px;
     margin-left: 15px;
     color: white;
 }
+
 .code-example {
     border-radius: 20px;
     background: lightgrey;
     padding: 20px;
 }
+
 .footer {
 
     justify-content: center;
@@ -142,6 +159,7 @@ padding-left: 90px;
     flex-direction: row;
 
 }
+
 .footer-item {
     border-radius: 10px;
     background-color: rgba(235, 76, 76, 0.687);
@@ -155,11 +173,13 @@ padding-left: 90px;
     height: 100px;
 
 }
+
 .footer-item:nth-child(2) {
     background-color: green;
     flex-direction: column;
 
 }
+
 .footer-item:nth-child(3) {
     background-color: yellow;
 }
