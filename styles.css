@@ -1,71 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@300;600&family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
-
 * {
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box;
+  }
 
+html, body {
+    height: 100%;
+    scroll-behavior: smooth; 
 }
 
 body {
-
-    background-image: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple);
-    padding: 40px 40px 40px 40px;
+    background: #2F4F4F;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-.site {
-    max-width: 1200px;
+.cv {
+    height: 100%;
+    width: 80%;
     margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.wrapper {
-    background: #ffffff;
+.header, .nav, .aside, .main, .footer {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.header {
+    color: white;
+    background: #171F2B;
+    background: #1c2635;
     display: flex;
-    max-width: 1200px;
-    margin: auto;
-    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 10px;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    background: #680D27;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-right: 50px;
+ 
+}
+
+.nav-list a:hover {
+    font-size: 25px;
 }
 
 .aside {
+    margin-right: 0;
+    width: 80%;
     background: #1e2939;
-    width: 370px;
     padding-top: 40px;
     padding-bottom: 40px;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
+}
+.avatar {
+    width: 320px;
 }
 
 .contacts {
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #ffffff;
 }
 
 .contacts-title {
-    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
     font-weight: 700;
     line-height: 28px;
     color: #fff;
-
 }
 
 .contacts-url {
-    font-size: 18px;
-    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 3px;
     line-height: 24px;
     color: #fff;
     margin-right: 10px;
+    text-decoration: none;
+    margin-bottom: 5px;
 }
 
-.about {
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-top: 50px;
-    padding-bottom: 110px;
+.skills {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 55px;
+}
+
+.skills-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+.skills-content {
+    font-size: 20px;
+}
+
+.item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 15px;
+    color: white;
+}
+
+.main {
+    display: flex;
+    padding: 0 0 0 0;
+    margin: 0 auto;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
     font-family: 'Nunito', sans-serif;
 }
 
-.avatar {
-    width: 370px;
+.content {
+    max-width: 864px;
+    margin: 0 auto;
+    padding: 0 90px;
 }
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 220px;
+    border: 1px solid grey;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.30);
+    transform: translateY(-5px);
+  }
 
 .profession {
     text-align: center;
@@ -91,7 +193,7 @@ body {
     text-align: justify;
 }
 
-.progects-title {
+.projects-title {
     margin-top: 20px;
     font-size: 22px;
     font-weight: 700;
@@ -99,88 +201,67 @@ body {
 }
 
 .projects {
+    background: #FFEFD5;
+    display: flex;
+    flex-direction: column;
     border-radius: 15px;
-    background-color: lightgreen;
     text-align: center;
     margin-bottom: 55px;
 }
 
-.url-progect {
-    color: #595959;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
+.projects ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.url-project a{
+    color: white;
+    font-size: 24px;
+    font-weight: 5px;
+    line-height: 40px;
+    text-decoration: none;
+    padding-left: 0;
 }
 
 .projects-item {
+    display: flex;
+    flex-direction: column;
     font-weight: 700;
-    margin-left: 30px;
+    margin-left: 10px;
+    list-style-type: none;
 }
 
-.skills {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 55px;
-}
-
-.skills-title {
-
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #fff;
-    margin-bottom: 20px;
-
-}
-
-.item {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-left: 15px;
-    color: white;
+.projects-item img {
+   border-radius:20px;
+    width: 200px;
+    height: 150px;
 }
 
 .code-example {
     border-radius: 20px;
-    background: lightgrey;
+    background: #ffff;
     padding: 20px;
+    margin-bottom: 40px;
 }
+
+
 
 .footer {
-
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    margin: auto;
-    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.20);
-    background-color: #7E1A34;
     display: flex;
-    flex-direction: row;
-
-}
-
-.footer-item {
-    border-radius: 10px;
-    background-color: rgba(235, 76, 76, 0.687);
-    color: white;
-    display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-    width: 200px;
     height: 100px;
-
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
+    background-color: #7E1A34;
+    color: white;
 }
 
-.footer-item:nth-child(2) {
-    background-color: green;
-    flex-direction: column;
-
+.footer img{
+    height: 40px;
 }
 
-.footer-item:nth-child(3) {
-    background-color: yellow;
-}
 
