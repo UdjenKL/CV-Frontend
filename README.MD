@@ -1,1 +1,1 @@
-https://udjenkl.github.io/CV-Frontend/
+https://udjenkl.github.io/rsschool-cv/
